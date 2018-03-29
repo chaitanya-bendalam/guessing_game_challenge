@@ -11,6 +11,11 @@ module.exports = function() {
 			method: 'GET', 															// Methods Type
 			path: '/guessit/{id}', 											// Url
 			handler: handler.printGuessItOutput 				// Action for fetching result
+		},
+		{
+			method: 'GET', 															// Methods Type
+			path: '/guessit/reloadgame/', 							// Url
+			handler: handler.reloadGame 				// Action for reloading game
 		}
 	];
 }();
