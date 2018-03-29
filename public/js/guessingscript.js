@@ -1,8 +1,5 @@
   "use strict"
-
-  var randomString = Math.floor((Math.random() * 10) + 1);
-  var maxTries = 3;
-
+  const url = window.location.origin;
   function validateNumber(event) {
     var key = window.event ? event.keyCode : event.which;
     if (event.keyCode === 8 || event.keyCode === 46) {
@@ -24,12 +21,12 @@
   $('#guessit').on('click', function() {
     var inputValue = Number($('#guess_value').val());
     $('#optText').html('');
-    $.get( 'http://127.0.0.1:3000/guessit/'+inputValue, function( data ) {
+    $.get( url + '/guessit/' + inputValue, function( data ) {
       $('#optText').html( data );
     })
   })
   $(document).ready(function() {
-    $.get( 'http://127.0.0.1:3000/guessit/reloadgame/', function( data ) {
+    $.get( url + 'guessit/reloadgame/', function( data ) {
         console.log(data);
     })
   })

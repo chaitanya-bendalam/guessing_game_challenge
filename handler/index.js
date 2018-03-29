@@ -10,19 +10,33 @@ module.exports = {
     if (input > 0 && input < 11) {
       var optStatement = '';
       if (maxTries > 0) {
+        var status = false;
         const noOfTries = (maxTries == 3) ? 'first' : ((maxTries == 2) ? 'second' :
           (maxTries == 1) ? 'last' : '');
         const interval = Number(findIntervalLength([input, randomString]));
-        if (interval == 0)
+        maxTries--;
+
+        if (interval == 0) {
           optStatement = 'Your ' + noOfTries + ' guess is: ' + input +
           '<br/>Right! You have won the game';
-        else if (interval >= 3)
+          randomString = Math.floor((Math.random() * 10) + 1);
+          maxTries = 3;
+          status = true;
+        }
+        else if (interval >= 3) {
           optStatement = 'Your ' + noOfTries + ' guess is: ' + input + ' (cold)';
-        else if (interval >= 2)
+        }
+        else if (interval >= 2) {
           optStatement = 'Your ' + noOfTries + ' guess is: ' + input + ' (warm)';
-        else if (interval >= 1)
+        }
+        else if (interval >= 1) {
           optStatement = 'Your ' + noOfTries + ' guess is: ' + input + ' (hot)';
-        maxTries--;
+        }
+        if(noOfTries == 'last' && status == false) {
+          optStatement = optStatement + '<br/>You lost the game!';
+          randomString = Math.floor((Math.random() * 10) + 1);
+          maxTries = 3;
+        }
       } else {
         optStatement = 'Your Max Tries done.';
       }
