@@ -14,7 +14,7 @@ git clone  https://github.com/chaitu0609/factset_code_exercise.git
 Run "npm install" to install dependency packages.
 
 ## How use it
-Run "npm start" to run the Application. The application will be running at http://0.0.0.0:1337/
+Run "npm start" to run the Application. The application will be running at http://127.0.0.1:1337/
 
 ## License
 
