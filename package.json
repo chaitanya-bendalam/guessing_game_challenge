@@ -1,12 +1,17 @@
 {
   "name": "guessing_game",
-  "version": "1.0.0",
-  "author": "Chaitanya Bendalam",
+  "description": "Number guessing challenge",
+  "version": "0.0.1",
+  "author": {
+    "name": "Chaitanya Bendalam",
+    "email": "chaitanya.0507@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/chaitu0609/guessing_game_challenge/issues"
+  },
   "dependencies": {
-    "bluebird": "^3.4.7",
     "hapi": "^16.1.0",
     "inert": "^4.1.0",
-    "joi": "^10.2.2",
     "vision": "^4.1.1"
   },
   "devDependencies": {
@@ -14,9 +19,15 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "license": "ISC",
-  "main": "index.js",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chaitu0609/guessing_game_challenge"
+  },
+  "license": "Public",
+  "homepage": "https://github.com/chaitu0609/guessing_game_challenge/",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "node ./lib/index.js",
+    "start": "node ./lib/index.js"
   }
 }
