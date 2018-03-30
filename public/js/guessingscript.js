@@ -1,5 +1,6 @@
   "use strict"
   const url = window.location.origin;
+
   function validateNumber(event) {
     var key = window.event ? event.keyCode : event.which;
     if (event.keyCode === 8 || event.keyCode === 46) {
@@ -21,12 +22,12 @@
   $('#guessit').on('click', function() {
     var inputValue = Number($('#guess_value').val());
     $('#optText').html('');
-    $.get( url + '/guessit/' + inputValue, function( data ) {
-      $('#optText').html( data );
+    $.get(url + '/guessit/' + inputValue, function(data) {
+      $('#optText').html(data);
     })
   })
   $(document).ready(function() {
-    $.get( url + 'guessit/reloadgame/', function( data ) {
-        console.log(data);
+    $.get(url + 'guessit/reloadgame/', function(data) {
+      console.log(data);
     })
   })
