@@ -12,6 +12,7 @@ git clone  https://github.com/chaitu0609/guessing_game_challenge.git
 ## Installations
 
 Run "npm install" to install dependency packages.
+
 Run "npm install -g mocha" to install the mocha package globally.
 
 ## How use it
