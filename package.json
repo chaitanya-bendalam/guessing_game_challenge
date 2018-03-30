@@ -23,6 +23,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./lib/index.js",
-    "mocha-test": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha -- -R spec --timeout 8000 --recursive"
+    "mocha-test": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha -- -R spec --timeout 8000 --recursive",
+    "test": "npm run mocha-test"
   }
 }
