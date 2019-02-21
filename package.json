@@ -10,12 +10,11 @@
     "url": "https://github.com/chaitu0609/guessing_game_challenge/issues"
   },
   "dependencies": {
-    "hapi": "^16.1.0",
+    "hapi": "^17.5.1",
     "inert": "^4.1.0",
     "vision": "^4.1.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=4.0.0"
   },
@@ -28,6 +27,6 @@
   "homepage": "https://github.com/chaitu0609/guessing_game_challenge/",
   "main": "lib/index.js",
   "scripts": {
-    "start": "node ./lib/index.js"
+    "start": "nodemon ./lib/index.js"
   }
 }
