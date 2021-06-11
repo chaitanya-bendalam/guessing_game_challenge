@@ -10,9 +10,9 @@
     "url": "https://github.com/chaitu0609/guessing_game_challenge/issues"
   },
   "dependencies": {
-    "hapi": "^17.5.1",
-    "inert": "^4.1.0",
-    "vision": "^4.1.1"
+    "@hapi/hapi": "^20.1.4",
+    "@hapi/inert": "^6.0.3",
+    "@hapi/vision": "^6.1.0"
   },
   "devDependencies": {},
   "engines": {
